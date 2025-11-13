@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div59UTBVJQY3AKLQX"></div>
+        <div class="lime top_div" id="top_divJAWA44G7L0ERLEC"></div>
         
         <script>
-        var top_div = d3.select('#top_div59UTBVJQY3AKLQX').classed('lime top_div', true);
+        var top_div = d3.select('#top_divJAWA44G7L0ERLEC').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1", "2", "3", "4", "5", "6", "7", "8"], [0.006865182425826788, 0.004304483532905579, 1.177731178358954e-06, 0.007568781729787588, 0.004620307590812445, 0.152351975440979, 0.14735393226146698, 0.23798993229866028, 0.4389442801475525]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1", "2", "3", "4", "5", "6", "7", "8"], [1.007019636745099e-05, 3.9812104660086334e-05, 9.79435998971212e-09, 0.00021642462525051087, 3.669148100016173e-06, 0.9994398951530457, 1.0652966011548415e-05, 0.0001587553124409169, 0.00012068278738297522]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1", "2", "3", "4", "5", "6", "7", "8"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["fwd_bulk_packets <= -0.05", -0.19107221320073975], ["bwd_bulk_packets <= -0.03", -0.1055063416437022], ["bwd_bulk_bytes <= -0.03", 0.019438714913477158], ["-0.49 < fwd_pkts_payload.min <= -0.20", -0.014697236781578624], ["flow_FIN_flag_count <= -0.54", 0.013323771651019563], ["resp_bytes <= -0.00", 0.013319880764384198], ["fwd_PSH_flag_count > -0.07", 0.011034644025727663], ["flow_iat.max > -0.28", 0.0106713495034326], ["fwd_bulk_rate <= -0.01", 0.010433024489792412], ["flow_iat.avg > -0.12", 0.010060006789470239]], 1, exp_div);
+                exp.show([["resp_bytes <= -0.00", -0.20217674425090873], ["bwd_bulk_packets <= -0.04", 0.1257104771194863], ["bwd_bulk_bytes <= -0.03", 0.09020235427814945], ["resp_pkts <= -0.42", 0.08498340731754678], ["fwd_bulk_rate <= -0.01", -0.07355029614806351], ["flow_FIN_flag_count <= -0.54", 0.06476518164453536], ["bwd_iat.min > -0.27", 0.0518064780103729], ["resp_ip_bytes <= -0.31", 0.049208506306401174], ["orig_pkts > -0.17", -0.04666060698493966], ["bwd_bulk_rate <= -0.03", 0.03469392478669764]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["fwd_bulk_packets", "-0.05", -0.19107221320073975], ["bwd_bulk_packets", "-0.03", -0.1055063416437022], ["bwd_bulk_bytes", "-0.03", 0.019438714913477158], ["fwd_pkts_payload.min", "-0.20", -0.014697236781578624], ["flow_FIN_flag_count", "-0.54", 0.013323771651019563], ["resp_bytes", "-0.00", 0.013319880764384198], ["fwd_PSH_flag_count", "-0.04", 0.011034644025727663], ["flow_iat.max", "1.84", 0.0106713495034326], ["fwd_bulk_rate", "-0.01", 0.010433024489792412], ["flow_iat.avg", "2.66", 0.010060006789470239]], 1, raw_div);
+            exp.show_raw_tabular([["resp_bytes", "-0.00", -0.20217674425090873], ["bwd_bulk_packets", "-0.04", 0.1257104771194863], ["bwd_bulk_bytes", "-0.03", 0.09020235427814945], ["resp_pkts", "-0.42", 0.08498340731754678], ["fwd_bulk_rate", "-0.01", -0.07355029614806351], ["flow_FIN_flag_count", "-0.54", 0.06476518164453536], ["bwd_iat.min", "4.69", 0.0518064780103729], ["resp_ip_bytes", "-0.31", 0.049208506306401174], ["orig_pkts", "-0.13", -0.04666060698493966], ["bwd_bulk_rate", "-0.03", 0.03469392478669764]], 1, raw_div);
         
         </script>
         </body></html>
